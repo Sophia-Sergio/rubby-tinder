@@ -1,0 +1,13 @@
+
+<h1><%= @user.email %></h1>
+
+<h1><%= @user.gender %></h1>
+
+<h1><%= @user.age %></h1>
+
+<h1><%= mensaje %></h1>
+
+
+<%= link_to 'like', interactions_path(id_user: @user.id, me_gusta: true), method: :post %>
+
+<%= link_to 'dislike', interactions_path(id_user: @user.id, me_gusta: false), method: :post %>
